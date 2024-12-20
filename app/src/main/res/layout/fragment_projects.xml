@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProjectsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Проекты"
+                android:textSize="20sp"
+                android:layout_marginEnd="7dp"/>
+
+            <Button
+                android:id="@+id/addProject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#6D71FE"
+                android:textColor="#402945"
+                android:layout_marginStart="90dp"
+                android:text="Добавить проект"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#BED28C"
+            android:layout_marginTop="8dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/totalProfitText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="#402945"
+                android:text="  Предполагаемая прибыль по незавершенным проектам: "
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/totalProfitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#6D71FE"
+                android:textColor="#402945"
+                android:layout_gravity="center"
+                android:text="Рассчитать"/>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProjects"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

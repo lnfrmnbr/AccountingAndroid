@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="245dp"
+        android:layout_height="213dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/main_icon"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="Вход в аккаунт"
+        android:textColor="#402945"
+        android:textSize="25sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/auth_login_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="276dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="textPassword"
+        app:boxStrokeColor="#402945"
+        app:endIconTint="#402945"
+        app:hintTextColor="#402945"
+        app:startIconTint="#402945">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/auth_login"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:inputType="text"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/auth_password_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="276dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        app:boxStrokeColor="#402945"
+        app:endIconTint="#402945"
+        app:hintTextColor="#402945"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:startIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/auth_password"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#6D71FE"
+        android:text="Войти"
+        android:textColor="#402945"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

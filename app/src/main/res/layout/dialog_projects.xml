@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nameProjectInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Название"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/costProjectInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Стоимость"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выберите департамент:"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerDepartments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/dateBegProjectInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Дата начала"/>
+
+            <EditText
+                android:id="@+id/dateEndProjectInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Предполагаемая дата окончания"/>
+
+            <EditText
+                android:id="@+id/dateEndRealProjectInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Дата окончания"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
